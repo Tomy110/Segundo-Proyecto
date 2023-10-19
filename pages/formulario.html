@@ -8,10 +8,57 @@
 <body>
 
     <h1>Formulario de contacto</h1>
-    <form action="">
-        <label for="nombre">Nombre: </label>
-        <input type="text">
+
+    <form action="" method="post" id="formregister">
+        
+        <label for="nombre">Nombre: </label>                             <br> <!-- br es como un enter para que no este todo junto -->
+        <input type="text" id="nombre" name="nombre" required>           <br>
+    <!-- required es para que sea obligatorio, osea debe ser llenado -->
+
+        <label for="apellido">Apellido: </label>                           <br>
+        <input type="text" id="apellido" name="apellido" autofocus>                <br>
+
+        <label for="dni">DNI:</label> <br>
+        <input type="number" id="dni" name="dni" maxlength="8"> <br>
+
+        <label for="edad">Edad:</label> <br>
+        <input type="number" id="edad" min="0" max="100" name="edad"> <br>
+
+        <label for="password">Password:</label> <br>
+        <input type="" id="password" name="password" minlength="8" maxlength="15"> <br>
+
+        <label for="email">Email:</label> <br>
+        <input type="email" name="email" id="email" pattern="([a-zA-Z0-9]([^ @&%$\\\/()=?¿!.,:;]?|\d?)+[a-zA-Z0-9][\.]){2,4}" placeholder="pepe@gmail.com"> <br>
+
+    
+        <input type="submit" value="Enviar Datos"> <br>
+        <!-- Tambien puede ir button pero el submit toma todos los datos y los envia, mientras que el otro  es cualquier tipo de dato-->
+    
+        <button>
+            Envio data con Button
+        </button>
+
+
     </form>
 
+    <div>
+        <button>
+            <a href="../index.html#piedepagina">Ruta Relativa</a>        
+        </button>
+    </div>
+
+    <div>
+        <button>
+            <a href="https://aulasvirtuales.frba.utn.edu.ar/" target="_blank">Ruta Absoluta</a>        
+        </button>
+    </div>
+
+    <img src="https://pbs.twimg.com/media/FkSO-8PXEAYtyW8?format=jpg&name=900x900" alt="Messi en la seleccion">
+
+    <a href="../pages/nosotros.html">
+        <img src="../assets/FkSO-8PXEAYtyW8.jpeg" alt="Messi en la seleccion">
+    </a>
+
+    
 </body>
 </html>
