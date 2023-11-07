@@ -1,0 +1,87 @@
+
+/*reseteo de css*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #CCCCCC;
+}
+
+div{
+    border: solid 1px black;   /*Esto es para darle un borde*/
+    /* float: right; */
+    width: 550px;   /*Es para espesificar un ancho a la imagen*/ 
+    padding: 35px; /*Es el relleno interno desde el borde para adentro de los elementos que tenemos dentro de otro elemento*/
+    margin: 40px;   /*Es la separacion entre etiquetas del lado externo*/
+    text-align: center;
+}
+
+.padre{
+    display: flex;
+    /*Lo ordena en columna*/
+    flex-direction: column;
+    /*Lo ordena en columna pero al reves*/
+    flex-direction: column-reverse;
+    /*Lo ordena en fila pero al reves*/
+    flex-direction: row-reverse;
+    /*Lo ordena en fila*/
+    flex-direction: row;
+    /*Es para pegar un salto cuando ya no entra un elemento mas a la derecha*/
+    flex-wrap: wrap;
+    /*sirve para posicionar la classe padre, center (al medio), right (derecha) y left (izquierda)*/
+    justify-content: center;
+
+}
+
+ul{
+    display: flex;
+    justify-content: space-between;   /*Sirve para separar los elementos*/
+    justify-content: space-around;   /*Sirve para que cada elemento esten separados pero tengan un espacio alrededor de ellos*/
+    justify-content: center;
+}
+
+li{
+    list-style: none;
+    border: solid 1px black;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-right: 25px;
+}
+
+.sinDeco{
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+button{
+    padding: 15px;
+    margin-top: 10px;
+}
+
+
+button a{
+    text-decoration: none;
+    color: black;
+}
+
+/*Cuando paso el nouse sobre el elemento*/
+button:hover{
+    background: green;
+    color: white;
+}
+
+button a:hover{
+    color: white;
+}
+
+h3, h4{
+    margin: 15px;
+}
+
